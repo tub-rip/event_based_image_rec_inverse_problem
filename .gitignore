@@ -1,0 +1,8 @@
+# folders
+/data/
+/results/
+
+# Python 
+__pycache__/
+*/__pycache__/*
+*.pyc
