@@ -51,6 +51,36 @@ python main.py
 
 The reconstructed images can be found in the `results` folder. 
 
+# Reconstruct an image with ground truth optical flow(IJRR dataset)
+
+[IJRR dataset](https://rpg.ifi.uzh.ch/davis_data.html) provides some sequences with pure rotation camera motion. These sequences are ideal to evaluate the method because the optical flow can be computed from the angular velocity and it can be found in IMU data, which is included in the dataset.
+
+First, checkout the `ijrr` branch.
+```
+git checkout ijrr
+```
+Then, create a folder named `data` (the preparation work in the previous section is considered complete at this moment, otherwise please do it)
+```
+mkdir data
+```
+Next, download one of the rotation sequences, such as `boxes_rotation`, and put it into the folder.
+
+Then, we have to split the big dataset into small chunks to avoid loading too many events into the RAM later.
+```
+python split_events_imu.py boxes_rotation
+```
+(please make sure you are in the root directory of this repository and the conda environment is activated and change the `boxes_rotation` to the name of the sequence you just downloaded)
+
+Finally, run:
+```
+python run_ijrr.py boxes_rotation --start_time 19.5 --num_events 30000
+```
+* Please change `boxes_rotation` to the name of the sequence you downloaded.
+* The parameter `start_time` decides at which time in the sequence to load events.
+* The parameter `num_events` decides how many events to load.
+
+The reconstructed images can be found in the `results` folder. 
+
 # Reconstruct an image with your own optical flow
 
 The code structure is specially designed to facilitate the process for the user to modifiy the code and reconstruct an image if he/she has his/her own optical flow estimation method.
