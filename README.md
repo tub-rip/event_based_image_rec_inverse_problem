@@ -2,18 +2,21 @@
 
 ![image](docs/ImgRecLinInvProb.png)
 
-The code here is related to the **TPAMI 2022 paper: [Formulating Event-based Image Reconstruction as a Linear Inverse Problem with Deep Regularization using Optical Flow](https://doi.org/10.1109/TPAMI.2022.3230727)**, by Zelin Zhang, [Anthony Yezzi](https://scholar.google.ch/citations?user=CZiW6c8AAAAJ) and [Guillermo Gallego](https://sites.google.com/view/guillermogallego)
+The code here is related to the **TPAMI 2022 paper: [Formulating Event-based Image Reconstruction as a Linear Inverse Problem with Deep Regularization using Optical Flow](https://doi.org/10.1109/TPAMI.2022.3230727)**, by [Zelin Zhang](https://www.linkedin.com/in/zelin-z-500369152/), [Anthony Yezzi](https://scholar.google.ch/citations?user=CZiW6c8AAAAJ) and [Guillermo Gallego](https://sites.google.com/view/guillermogallego)
 
 The [PDF of the paper is available](https://arxiv.org/pdf/2112.06242). If you use this work in your research, please cite it as follows:
 
 ```bibtex
 @article{Zhang22pami,
-  author = {Zhang, Zelin and Yezzi, Anthony and Gallego, Guillermo},  
-  title = {Formulating Event-based Image Reconstruction 
+  author  = {Zhang, Zelin and Yezzi, Anthony and Gallego, Guillermo},  
+  title   = {Formulating Event-based Image Reconstruction 
   as a Linear Inverse Problem with Deep Regularization using Optical Flow},
   journal = {{IEEE} Trans. Pattern Anal. Mach. Intell.},
-  year = {2022},
-  doi = {10.1109/TPAMI.2022.3230727}
+  year    = {2023},
+  volume  = {45},
+  number  = {7},
+  pages   = {8372-8389},
+  doi     = {10.1109/TPAMI.2022.3230727}
 }
 ```
 
@@ -123,7 +126,7 @@ This code borrows from the following open source projects, whom we would like to
 
 # Additional Resources
 
-* [Secrets of Event-Based Optical Flow (ECCV 2022)](https://github.com/tub-rip/event_based_optical_flow)
+* [Secrets of Event-Based Optical Flow (ECCV 2022, TPAMI 2024)](https://github.com/tub-rip/event_based_optical_flow)
 * [Research page (TU Berlin RIP lab)](https://sites.google.com/view/guillermogallego/research/event-based-vision)
 * [Course at TU Berlin](https://sites.google.com/view/guillermogallego/teaching/event-based-robot-vision)
 * [Survey paper](http://rpg.ifi.uzh.ch/docs/EventVisionSurvey.pdf)
